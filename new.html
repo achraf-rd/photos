@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regards Photographiques</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #2a2a2a;
+            background: #fafaf8;
+            padding: 60px 40px;
+            max-width: 950px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #888;
+            margin: 3px 0;
+            font-style: italic;
+        }
+
+        .info-box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-left: 3px solid #d4af37;
+            font-size: 12px;
+        }
+
+        .info-box strong {
+            color: #1a1a1a;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 12px;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 45px;
+            margin-bottom: 20px;
+        }
+
+        .photo-item {
+            background: white;
+            padding: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .photo-item:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
+        .photo-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Limiting max height for vertical images so they don't take up too much screen */
+        .photo-image[src*="23.34.40"], 
+        .photo-image[src*="23.34.22"],
+        .photo-image[src*="23.36.01"],
+        .photo-image[src*="23.34.09 (1)"] {
+            max-height: 700px; 
+            width: auto;
+        }
+
+        .photo-caption {
+            padding: 20px;
+            background: white;
+        }
+
+        .caption-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .caption-text {
+            font-size: 13px;
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .caption-focus {
+            font-size: 12px;
+            color: #d4af37;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e8e8e8;
+            margin: 50px 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #d4af37;
+            text-align: center;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .footer p {
+            margin: 6px 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .photo-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>REGARDS PHOTOGRAPHIQUES</h1>
+        <p>Un voyage entre lumière urbaine et beauté naturelle</p>
+        <p style="margin-top: 12px;">Université Mohammed VI Polytechnique</p>
+    </div>
+
+    <div class="info-box">
+        <p><strong>Groupe:</strong> Achraf RACHID, Imadeddine BENDADOUCH, Meriyem FATTAH, Khadija LAHRACH</p>
+        <p><strong>Cours:</strong> Photographie | Prof. Khalil NEMMAOUI</p>
+        <p><strong>Date:</strong> Décembre 2025</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">STREET PHOTOGRAPHY</h2>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.34.40.jpeg" alt="Cycliste nocturne" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Traversée Brumeuse</div>
+                    <div class="caption-text">Une silhouette solitaire émerge d'un halo doré. La brume épaisse transforme l'éclairage urbain en une présence quasi-mystique, figeant le mouvement du cycliste dans un instant de calme absolu.</div>
+                    <div class="caption-focus">Atmosphère onirique • Contre-jour diffus</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.32.42.jpg" alt="Grêlon sur asphalte" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Éphémère et Brut</div>
+                    <div class="caption-text">Le contraste entre la glace organique et la rugosité de l'asphalte mouillé. Cette prise de vue souligne la texture du sol après l'orage, où la lumière se reflète sur chaque grain de bitume.</div>
+                    <div class="caption-focus">Contraste de textures • Reflets spéculaires</div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.34.22.jpeg" alt="Marché traditionnel nocturne" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Convergence au Souk</div>
+                    <div class="caption-text">Sous les bâches tendues, la vie nocturne palpite. La perspective fuyante guide l'œil à travers la foule, capturant l'effervescence et les lumières chaudes des étals de la médina.</div>
+                    <div class="caption-focus">Perspective linéaire • Vie sociale</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.36.01.jpeg" alt="Fresque murale géante" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Mémoire sur Béton</div>
+                    <div class="caption-text">L'art monumental s'empare de l'espace public. Le regard profond du personnage peint dialogue avec les passants, transformant une façade banale en un vibrant hommage à l'identité locale.</div>
+                    <div class="caption-focus">Échelle et proportion • Street art</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.33.32.jpeg" alt="Coucher de soleil sur plage" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">L'Heure d'Or</div>
+                    <div class="caption-text">Un paquebot à l'horizon semble porter le soleil. Les silhouettes sur le sable deviennent des ombres chinoises, créant une scène de sérénité collective face à l'immensité océanique.</div>
+                    <div class="caption-focus">Silhouette • Palette de couleurs chaudes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-item">
+    <img src="WhatsApp Image 2025-12-17 at 23.34.09.jpeg" alt="Espace urbain quotidien" class="photo-image">
+    <div class="photo-caption">
+        <div class="caption-title">Contemplation Urbaine</div>
+        <div class="caption-text">Au cœur de la ville, le temps semble suspendre son vol. Deux spectateurs anonymes, assis face à l'horizon urbain, incarnent une pause humaniste au milieu de la verticalité des palmiers et du rythme incessant de la rue.</div>
+        <div class="caption-focus">Humanisme urbain • Symétrie verticale</div>
+    </div>
+</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">PHOTOGRAPHIE NATURELLE</h2>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.33.08.jpeg" alt="Fleur rose et blanche" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Rayonnement Floral</div>
+                    <div class="caption-text">Focus sur la délicatesse des pétales veinés. La netteté sur le cœur de la fleur révèle une symétrie parfaite, soulignée par un arrière-plan végétal doux et diffus.</div>
+                    <div class="caption-focus">Macro-photographie • Bokeh</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.32.43 (1).jpeg" alt="Fleurs Lantana" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Mosaïque de Couleurs</div>
+                    <div class="caption-text">Une explosion de tons chauds. Ces fleurs de Lantana forment un gradient naturel allant du rouge intense au jaune vif, offrant une richesse visuelle dense et texturée.</div>
+                    <div class="caption-focus">Saturation des couleurs • Détail floral</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.32.43.jpeg" alt="Feuilles vertes" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Vigueur Chlorophylle</div>
+                    <div class="caption-text">La beauté réside dans les détails microscopiques. Le grain serré des feuilles et leurs bords dentelés témoignent de la force de la nature dans sa forme la plus simple.</div>
+                    <div class="caption-focus">Texture organique • Vert profond</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.32.43 (2).jpeg" alt="Minaret à travers les arbres" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Éclat Spirituel</div>
+                    <div class="caption-text">Le minaret se dresse fièrement, encadré par les branches d'oliviers. Un jeu de profondeur qui lie l'architecture religieuse à la terre et à sa flore ancestrale.</div>
+                    <div class="caption-focus">Profondeur de champ • Cadrage naturel</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.33.07.jpeg" alt="Fleurs jaunes soleil" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Pétales de Lumière</div>
+                    <div class="caption-text">Trois fleurs s'ouvrent au soleil, captant chaque rayon. La répétition des formes circulaires crée un rythme visuel apaisant et plein d'énergie printanière.</div>
+                    <div class="caption-focus">Répétition de motifs • Luminosité</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="WhatsApp Image 2025-12-17 at 23.34.09 (1).jpeg" alt="Cactus cadrage medina" class="photo-image">
+                <div class="photo-caption">
+                    <div class="caption-title">Fenêtre Épineuse</div>
+                    <div class="caption-text">Utilisation du premier plan pour créer un cadre original. Les bras du cactus encadrent la vue plongeante sur la rue animée, créant un contraste saisissant entre nature et urbanité.</div>
+                    <div class="caption-focus">Cadre dans le cadre • Perspective aérienne</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Photographie comme langage visuel</strong></p>
+        <p>Révéler ce qui existe mais ne se voit pas. Transformer le quotidien en contemplation.</p>
+        <p style="margin-top: 15px; font-size: 10px; color: #bbb;">Document réalisé - Décembre 2025</p>
+    </div>
+</body>
+</html>
